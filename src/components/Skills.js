@@ -1,20 +1,56 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import javaIcon from "../assets/img/skills/java-icon.svg";
+import javascriptIcon from "../assets/img/skills/javascript-icon.svg";
+import nodeIcon from "../assets/img/skills/node-icon.svg";
+import reactIcon from "../assets/img/skills/react-icon.svg";
+import firebaseIcon from "../assets/img/skills/firebase-icon.svg";
+import kotlinIcon from "../assets/img/skills/kotlin-icon.svg";
+import photoshopIcon from "../assets/img/skills/photoshop-icon.svg";
+import lightroomIcon from "../assets/img/skills/lightroom-icon.svg";
+import illustratorIcon from "../assets/img/skills/illustrator-icon.svg";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp2.png"
 
 
 export const Skills = () => {
     const skills = [
-        'Java',
-        'HTML',
-        'CSS',
-        'Javascript',
-        'Node',
-        'React'
+        {
+            title: 'Java',
+            imgUrl: javaIcon
+        },
+        {
+            title: 'Javascript',
+            imgUrl: javascriptIcon
+        },
+        {
+            title: 'React',
+            imgUrl: reactIcon
+        },
+        {
+            title: 'Firebase',
+            imgUrl: firebaseIcon
+        },
+        {
+            title: 'Kotlin',
+            imgUrl: kotlinIcon
+        },
+        {
+            title: 'Node',
+            imgUrl: nodeIcon
+        },
+        {
+            title: 'Illustrator',
+            imgUrl: illustratorIcon
+        },
+        {
+            title: 'Photoshop',
+            imgUrl: photoshopIcon
+        },
+        {
+            title: 'Lightroom',
+            imgUrl: lightroomIcon
+        }
     ];
 
     const responsive = {
@@ -49,8 +85,8 @@ export const Skills = () => {
                             skills.map((element, index) => {
                                 return (
                                     <div className="item" key={index}>
-                                        <img src={meter1} alt={element + ' icon'} />
-                                        <h5>{element}</h5>
+                                        <img src={element.imgUrl} alt={element.title + ' icon'} />
+                                        <h5>{element.title}</h5>
                                     </div>
 
                                 )
@@ -61,7 +97,6 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
-    </section>
+        </section>
     )
 }

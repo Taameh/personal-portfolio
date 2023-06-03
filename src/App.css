@@ -424,7 +424,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Contact Css ************/
 .contact {
   background: linear-gradient(#4b36aa -5.91%, #5a8dda 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 60px 0 50px 0;
 }
 .contact img {
   width: 92%;
@@ -497,6 +497,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form p {
   font-size: 10px;
 }
+
+
+/************ Footer Css ************/
+.footer {
+  padding: 50px;
+  background: linear-gradient(#080613 -5.91%, #0a101a 111.58%);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer img {
+  width: 10%;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -7,10 +7,9 @@ import kotlinIcon from "../assets/img/skills/kotlin-icon.svg";
 import photoshopIcon from "../assets/img/skills/photoshop-icon.svg";
 import lightroomIcon from "../assets/img/skills/lightroom-icon.svg";
 import illustratorIcon from "../assets/img/skills/illustrator-icon.svg";
-import { Col, Container, Row } from "react-bootstrap";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../assets/img/color-sharp2.png"
 
 
 export const Skills = () => {

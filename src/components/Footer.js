@@ -10,13 +10,13 @@ export const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <Col size={12} sm={6}>
-            <h3>Let's create a new reallity together</h3>
+            <h3>Let's create a new reallity together.</h3>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://github.com/Taameh"><img src={navIcon1} alt="Github" /></a>
+              <a href="https://www.linkedin.com/in/ArroyoTomas"><img src={navIcon2} alt="LinkedIn" /></a>
+              <a href="https://www.instagram.com/taameh12/"><img src={navIcon3} alt="Instagram" /></a>
             </div>
             <p>Created by Taameh.</p>
           </Col>

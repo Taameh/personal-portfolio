@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowDownCircle } from 'react-bootstrap-icons';
 import headerImg from "../assets/img/header-img.png";
+import resume from '../resume/resume-tomas-arroyo.pdf'
+
 
 
 export const Banner = () => {
@@ -9,7 +11,6 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(80 - Math.random() * 50);
-    const [index, setIndex] = useState(1);
     const toRotate = [ "Systems Engineering", "Graphic Designer", "Junior Developer"];
     const period = 2000;
 
@@ -50,7 +51,7 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi I'm Tomás! `}<br/><span className="wrap">{text}</span><span className="bar">|</span></h1>
                         <p>I am Tomás Arroyo, a self-taught Junior Fullstack Developer and graphic designer. Currently, I am pursuing a degree in Systems Engineering at UNS. My passion is seeking innovative solutions to problems. I focus on continuous learning and strive to constantly evolve as a professional.</p>
-                        <button onClick={()=> console.log('conect')}>Download resume <ArrowDownCircle  size={25}/></button>
+                        <button onClick={() => window.open(resume, "_blank")}>Download resume <ArrowDownCircle  size={25}/></button>
                     </Col>
                     
                     <Col xs={12} md={6} xl={5}>
